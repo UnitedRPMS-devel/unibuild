@@ -13,7 +13,7 @@ build:
         command-timeout: 30
         name: echo
         code: | 
-          /urpms -g UnitedRPMs/spotify -s spotify.spec -r true -d 'dist .fc24' 
+          /urpms -g UnitedRPMs/spotify-client -s spotify-client.spec -r true -d 'dist .fc24' 
 
 
 # dummy build 15
