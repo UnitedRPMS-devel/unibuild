@@ -1,7 +1,6 @@
 united-build: 
 language: generic
 sudo: required
-dist: precise
 services:
 - docker
 # DISABLE before_install if you want build with mock
