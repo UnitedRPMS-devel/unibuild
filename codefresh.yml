@@ -2,10 +2,10 @@ version: '1.0'
 
 steps:
 
-  unibuild2:
+  unibuild:
     type: build
     description: UC - build step
-    image-name: davidva/unibuild
+    image_name: davidva/unibuild
     dockerfile: Dockerfile
 #    tag: master
     no_cache: true
