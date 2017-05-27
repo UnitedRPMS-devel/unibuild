@@ -5,7 +5,7 @@ steps:
   unibuild:
     type: build
     description: UC - build step
-    image_name: davidva/unibuild
+    image_name: davidva/unibuild-26
     dockerfile: Dockerfile
 #    tag: master
     no_cache: true
