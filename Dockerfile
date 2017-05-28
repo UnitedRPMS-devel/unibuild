@@ -8,7 +8,7 @@ RUN rm -rf united-build \
 && cp -f urpms / \
 && chmod a+x urpms \
 && chmod a+x /urpms \
-&& ./urpms -g UnitedRPMs/x264 -s x264.spec -r true -d 'dist .fc26'   
+&& ./urpms -g UnitedRPMs/x264 -s x264.spec -r true -d 'dist .fc26' -c true   
 
 CMD ["/bin/bash", "/usr/bin/bash"]
 
