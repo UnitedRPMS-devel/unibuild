@@ -10,7 +10,7 @@ dependencies:
 
 test:
   override:
-    - docker run -v $(pwd):/root/enjoy davidva/unibuild /bin/sh urpms -g UnitedRPMs/x264 -s x264.spec -r true -d 'dist .fc25' -c true:
+    - docker run -v $(pwd):/root/enjoy davidva/unibuild /bin/sh urpms -g UnitedRPMs/spotify-client -s spotify-client.spec -r true -d 'dist .fc25':
         parallel: true
         timeout: 9600
 
