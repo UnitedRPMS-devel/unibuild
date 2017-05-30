@@ -1,4 +1,4 @@
-FROM davidva/unibuild-24
+FROM davidva/unibuild-26
 
 MAINTAINER David Va <davidva@tutanota.com>
 
@@ -8,7 +8,7 @@ RUN rm -rf united-build \
 && cp -f urpms / \
 && chmod a+x urpms \
 && chmod a+x /urpms \
-&& ./urpms -g UnitedRPMs/x264 -s x264.spec -r true -d 'dist .fc24' -c true  
+&& ./urpms -g UnitedRPMs/vidcutter -s vidcutter.spec -r true -d 'dist .fc26' -c true  
 
 CMD ["/bin/bash", "/usr/bin/bash"]
 
