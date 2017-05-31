@@ -8,7 +8,7 @@ RUN rm -rf united-build \
 && cp -f urpms / \
 && chmod a+x urpms \
 && chmod a+x /urpms \
-&& ./urpms -g UnitedRPMs/gstreamer1-plugins-bad-freeworld -s gstreamer1-plugins-bad-freeworld.spec -r true -d 'dist .fc26' -c true  
+&& ./urpms -g UnitedRPMs/libopenshot -s libopenshot.spec -r true -d 'dist .fc26' -c true  
 
 CMD ["/bin/bash", "/usr/bin/bash"]
 
