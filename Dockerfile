@@ -8,7 +8,7 @@ RUN rm -rf united-build \
 && cp -f urpms / \
 && chmod a+x urpms \
 && chmod a+x /urpms \
-&& ./urpms -g UnitedRPMs/syncthing -s syncthing.spec -r true -d 'dist .fc26' -c true 
+&& ./urpms -g UnitedRPMs/syncthing-inotify -s syncthing-inotify.spec -r true -d 'dist .fc26' -c true 
 
 CMD ["/bin/bash", "/usr/bin/bash"]
 
