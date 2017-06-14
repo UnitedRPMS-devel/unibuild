@@ -10,7 +10,7 @@ dependencies:
 
 test:
   override:
-    - docker run -v $(pwd):/root/enjoy davidva/unibuild-27 /bin/sh urpms -g UnitedRPMs/kodi-pvr-addons -s kodi-pvr-addons.spec -r true -d 'dist .fc27' -c true -u true:
+    - docker run -v $(pwd):/root/enjoy davidva/unibuild-27 /bin/sh urpms -g UnitedRPMs/curlew -s curlew.spec -r true -d 'dist .fc27' -c true -u true:
         parallel: true
         timeout: 9600
 

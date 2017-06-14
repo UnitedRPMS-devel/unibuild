@@ -8,7 +8,7 @@ RUN rm -rf united-build \
 && cp -f urpms / \
 && chmod a+x urpms \
 && chmod a+x /urpms \
-&& ./urpms -g UnitedRPMs/kodi-pvr-addons -s kodi-pvr-addons.spec -r true -d 'dist .fc26' -c true -u true
+&& ./urpms -g UnitedRPMs/curlew -s curlew.spec -r true -d 'dist .fc26' -c true -u true
 
 CMD ["/bin/bash", "/usr/bin/bash"]
 
