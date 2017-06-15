@@ -8,7 +8,7 @@ RUN rm -rf united-build \
 && cp -f urpms / \
 && chmod a+x urpms \
 && chmod a+x /urpms \
-&& ./urpms -g UnitedRPMs/unitedrpms -s unitedrpms.spec -r true -d 'dist .fc26' -c true -u true
+&& ./urpms -g UnitedRPMs/libreoffice-gtk3 -s libreoffice-gtk3.spec -r true -d 'dist .fc26' -c true -u true
 
 CMD ["/bin/bash", "/usr/bin/bash"]
 
