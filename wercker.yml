@@ -16,7 +16,7 @@ build:
           /urpms -g UnitedRPMs/spotify-client -s spotify-client.spec -r true -d 'dist .fc24' 
 
 
-# dummy build 29
+# dummy build 30...
 
 
 
