@@ -8,7 +8,7 @@ RUN rm -rf united-build \
 && cp -f urpms / \
 && chmod a+x urpms \
 && chmod a+x /urpms \
-&& ./urpms -g UnitedRPMs/chromium-pepper-flash -s chromium-pepper-flash.spec -r true -d 'dist .fc26' -c true -u true
+&& ./urpms -g UnitedRPMs/unace -s unace.spec -r true -d 'dist .fc26' -c true -u true
 
 CMD ["/bin/bash", "/usr/bin/bash"]
 
