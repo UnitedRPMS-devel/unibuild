@@ -10,9 +10,15 @@ dependencies:
 
 test:
   override:
-    - docker run -v $(pwd):/root/enjoy davidva/unibuild-27 /bin/sh urpms -g UnitedRPMs/wps-i18n -s wps-i18n.spec -r true -d 'dist .fc27' -c true:
+    - docker run -v $(pwd):/root/enjoy davidva/unibuild-27 /bin/sh urpms -g UnitedRPMs/thunar-dropbox -s thunar-dropbox.spec -r true -d 'dist .fc27' -c true:
         parallel: true
         timeout: 9600
+
+notify:
+  webhooks:
+    # A list of hook hashes, containing the url field
+    # gitter hook
+    - url: https://webhooks.gitter.im/e/8ff0b35066468a87de71
 
         
 
