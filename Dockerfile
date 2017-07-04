@@ -8,7 +8,7 @@ RUN rm -rf united-build \
 && cp -f urpms / \
 && chmod a+x urpms \
 && chmod a+x /urpms \
-&& ./urpms -g UnitedRPMs/nemo-dropbox -s nemo-dropbox.spec -r true -d 'dist .fc26' -c true 
+&& ./urpms -g UnitedRPMs/caja-dropbox -s caja-dropbox.spec -r true -d 'dist .fc26' -c true 
 
 CMD ["/bin/bash", "/usr/bin/bash"]
 
