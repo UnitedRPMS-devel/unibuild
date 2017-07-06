@@ -8,7 +8,7 @@ RUN rm -rf united-build \
 && cp -f urpms / \
 && chmod a+x urpms \
 && chmod a+x /urpms \
-&& ./urpms -g UnitedRPMs/vlc -s vlc.spec -r true -d 'dist .fc26' -c true 
+&& ./urpms -g UnitedRPMs/i-nex -s i-nex.spec -r true -d 'dist .fc26' -c true 
 
 CMD ["/bin/bash", "/usr/bin/bash"]
 
