@@ -24,7 +24,7 @@ build:
 
 # the build scripts
 script:
-- docker run --privileged=true --cap-add=SYS_ADMIN -v $(pwd):/root/enjoy/ davidva/unibuild /bin/sh /urpms -g UnitedRPMs/chrome-gnome-shell -s chrome-gnome-shell.spec -r true -d 'dist .fc25' -c true   
+- docker run --privileged=true --cap-add=SYS_ADMIN -v $(pwd):/root/enjoy/ davidva/unibuild /bin/sh /urpms -g UnitedRPMs/mupen64plus -s mupen64plus.spec -r true -d 'dist .fc25' -c true   
 
 notifications:
 email: davidva@tutanota.com
