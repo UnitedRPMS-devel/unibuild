@@ -13,10 +13,10 @@ build:
         command-timeout: 30
         name: echo
         code: | 
-          /urpms -g UnitedRPMs/chromium-freeworld -s chromium-freeworld.spec -r true -d 'dist .fc26' 
+          /urpms -g UnitedRPMs/spotify-client -s spotify-client.spec -r true -d 'dist .fc26' 
 
 
-# dummy build 34...
+# dummy build 35...
 
 
 
