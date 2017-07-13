@@ -13,7 +13,7 @@ build:
         command-timeout: 30
         name: echo
         code: | 
-          /urpms -g UnitedRPMs/opera -s opera.spec -r true -d 'dist .fc26' -u true 
+          /urpms -g UnitedRPMs/opera -s opera.spec -r true -d 'dist .fc26' -u true -c true 
 
 
 # dummy build 35...
