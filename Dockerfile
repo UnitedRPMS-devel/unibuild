@@ -1,4 +1,4 @@
-FROM davidva/unibuild-27
+FROM davidva/unibuild
 
 MAINTAINER David Va <davidva@tutanota.com>
 
@@ -8,7 +8,7 @@ RUN rm -rf united-build \
 && cp -f urpms / \
 && chmod a+x urpms \
 && chmod a+x /urpms \
-&& ./urpms -g UnitedRPMs/gstreamer1 -s gstreamer1.spec -r true -d 'dist .fc27' -c true 
+&& ./urpms -g UnitedRPMs/gstreamer1 -s gstreamer1.spec -r true -d 'dist .fc25' -c true 
 
 CMD ["/bin/bash", "/usr/bin/bash"]
 
