@@ -13,7 +13,7 @@ before_install:
 script:
 # ENABLE tne next line and delete add a "#" the next lines; if you want build with shotcut
 #- travis_wait 40 docker run --cap-add=SYS_ADMIN davidva/unibuild-24 /bin/sh /urpms -g UnitedRPMs/kodi-platform -s kodi-platform.spec -t fedora-24-x86_64
-- "docker run -v $(pwd):/root/enjoy --cap-add=SYS_ADMIN davidva/unibuild-24 /bin/sh /urpms -g UnitedRPMs/chromium-pepper-flash -s chromium-pepper-flash.spec -r true -d 'dist .fc24' -c true" 
+- "docker run -v $(pwd):/root/enjoy --cap-add=SYS_ADMIN davidva/unibuild-24 /bin/sh /urpms -g UnitedRPMs/freshplayerplugin -s freshplayerplugin.spec -r true -d 'dist .fc24' -c true" 
 notifications:
   webhooks:
     urls:
