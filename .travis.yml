@@ -3,7 +3,7 @@ language: generic
 sudo: required
 services:
 - docker
-# DISABLE before_install if you want build with opera
+# DISABLE before_install if you want build with atom
 before_install:
   - sudo apt-get update
   - echo 'DOCKER_OPTS="-H tcp://127.0.0.1:2375 -H unix:///var/run/docker.sock -s devicemapper"' | sudo tee /etc/default/docker > /dev/null
@@ -11,9 +11,9 @@ before_install:
   - sleep 5
   - sudo docker pull davidva/unibuild-24
 script:
-# ENABLE tne next line and delete add a "#" the next lines; if you want build with opera
+# ENABLE tne next line and delete add a "#" the next lines; if you want build with atom
 #- travis_wait 40 docker run --cap-add=SYS_ADMIN davidva/unibuild-24 /bin/sh /urpms -g UnitedRPMs/kodi-platform -s kodi-platform.spec -t fedora-24-x86_64
-- "docker run -v $(pwd):/root/enjoy --cap-add=SYS_ADMIN davidva/unibuild-24 /bin/sh /urpms -g UnitedRPMs/opera -s opera.spec -r true -d 'dist .fc24' -c true" 
+- "docker run -v $(pwd):/root/enjoy --cap-add=SYS_ADMIN davidva/unibuild-24 /bin/sh /urpms -g UnitedRPMs/atom -s atom.spec -r true -d 'dist .fc24' -c true" 
 notifications:
   webhooks:
     urls:
