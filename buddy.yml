@@ -1,0 +1,9 @@
+- pipeline: "unibuild"
+  trigger_mode: "MANUAL"
+  ref_name: "master"
+  actions:
+  - action: "Build rpm for you..."
+    type: "DOCKERFILE"
+    dockerfile_path: "Dockerfile"
+    execute_commands:
+    - "sudo apt-get -y install git"
