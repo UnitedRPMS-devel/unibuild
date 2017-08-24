@@ -2,10 +2,10 @@
   trigger_mode: "MANUAL"
   ref_name: "master"
   actions:
-  - action: "Execute: npm test"
+  - action: "Build application"
     type: "BUILD"
     docker_image_name: "davidva/unibuild-28"
-    docker_image_tag: "6"
+    docker_image_tag: "latest"
     execute_commands:
     - "rm -f urpms"
     - "wget -c https://raw.githubusercontent.com/kuboosoft/united-build/master/urpms"
