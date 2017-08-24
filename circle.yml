@@ -10,7 +10,7 @@ dependencies:
 
 test:
   override:
-    - docker run -v $(pwd):/root/enjoy davidva/unibuild-27 /bin/sh urpms -g UnitedRPMs/la-capitaine-icon-theme -s la-capitaine-icon-theme.spec -r true -d 'dist .fc27' -c true:
+    - docker run -v $(pwd):/root/enjoy davidva/unibuild-27 /bin/sh urpms -g UnitedRPMs/kodi -s kodi.spec -r true -d 'dist .fc27' -c true:
         parallel: true
         timeout: 9600
 
