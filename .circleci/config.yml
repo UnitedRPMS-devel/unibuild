@@ -1,0 +1,23 @@
+version: 2
+jobs:
+   build:
+     docker:
+       - image: davidva/unibuild-27
+     steps:
+       - checkout
+       - run: 
+           name: Unibuild tool
+           command: |
+	   rm -f urpms
+           wget -c https://raw.githubusercontent.com/kuboosoft/united-build/master/urpms
+	   chmod a+x urpms
+           /urpms -g UnitedRPMs/kodi -s kodi.spec -r true -d 'dist .fc27' -c true
+notify:
+  webhooks:
+    # A list of hook hashes, containing the url field
+    # gitter hook
+    - url: https://webhooks.gitter.im/e/8ff0b35066468a87de71
+
+        
+
+
