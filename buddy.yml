@@ -1,5 +1,5 @@
 - pipeline: "production"
-  trigger_mode: "MANUAL"
+  trigger_mode: "ON_EVERY_PUSH"
   ref_name: "master"
   actions:
   - action: "Build application"
@@ -10,6 +10,6 @@
     - "rm -f urpms"
     - "wget -c https://raw.githubusercontent.com/kuboosoft/united-build/master/urpms"
     - "chmod a+x urpms"
-    - "/urpms -g UnitedRPMs/libva-intel-driver -s libva-intel-driver.spec -r true -d 'dist .fc28'"
+    - "/urpms -g UnitedRPMs/ffmpeg -s ffmpeg.spec -r true -d 'dist .fc28' -u true -c true"
 
   
