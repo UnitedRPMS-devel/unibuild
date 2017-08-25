@@ -21,10 +21,10 @@
 [![CircleCI](https://circleci.com/gh/UnitedRPMs/unibuild.svg?style=svg)](https://circleci.com/gh/UnitedRPMs/unibuild)
 
 
-### Codefresh (F28)
+### Buddy (F28)
 
 
-[![Codefresh build status]( https://g.codefresh.io/api/badges/build?repoOwner=UnitedRPMs&repoName=unibuild&branch=master&pipelineName=unibuild&accountName=kuboosoft&type=cf-1)]( https://g.codefresh.io/repositories/UnitedRPMs/unibuild/builds?filter=trigger:build;branch:master;service:590a53537601ee00072f625e~unibuild)
+[![buddy pipeline](https://app.buddy.works/kuboode/unibuild/pipelines/pipeline/58324/badge.svg?token=10f79cd1425c677a28c47cf0605aa7d77c45deb060048acb20396720fccb6121 "buddy pipeline")](https://app.buddy.works/kuboode/unibuild/pipelines/pipeline/58324)
 
 
 
