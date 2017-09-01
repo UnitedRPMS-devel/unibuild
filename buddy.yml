@@ -1,6 +1,7 @@
 - pipeline: "production"
   trigger_mode: "ON_EVERY_PUSH"
   ref_name: "master"
+  always_from_scratch: true
   actions:
   - action: "Build application"
     type: "BUILD"
@@ -10,6 +11,6 @@
     - "rm -f urpms"
     - "wget -c https://raw.githubusercontent.com/kuboosoft/united-build/master/urpms"
     - "chmod a+x urpms"
-    - "/urpms -g UnitedRPMs/kodi -s kodi.spec -r true -d 'dist .fc28' -c true"
+    - "/urpms -g UnitedRPMs/kodi -s kodi.spec -r true -d 'dist .fc28'"
 
   
