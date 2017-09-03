@@ -2,7 +2,7 @@ version: 2
 jobs:
   build:
     docker: 
-      - image: davidva/unibuild-26
+      - image: davidva/unibuild-27
     working_directory: /home/ubuntu/build
     no_output_timeout: 30m
     steps:
@@ -10,7 +10,7 @@ jobs:
       - run: rm -f urpms
       - run: wget -c https://raw.githubusercontent.com/kuboosoft/united-build/master/urpms
       - run: chmod a+x urpms
-      - run: "/urpms -g UnitedRPMs/kodi -s kodi.spec -r true -d 'dist .fc26' -c true"
+      - run: "/urpms -g UnitedRPMs/mupen64plus-gui -s mupen64plus-gui.spec -r true -d 'dist .fc27' -c true"
 notify:
   webhooks:
     # A list of hook hashes, containing the url field
