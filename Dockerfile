@@ -8,7 +8,7 @@ RUN rm -rf united-build \
 && cp -f urpms / \
 && chmod a+x urpms \
 && chmod a+x /urpms \
-&& ./urpms -g UnitedRPMs/mock-unitedrpms -s mock-unitedrpms.spec -r true -d 'dist .fc28'  
+&& ./urpms -g UnitedRPMs/libopenshot -s libopenshot.spec -r true -d 'dist .fc28'  
 CMD ["/bin/bash", "/usr/bin/bash"]
 
 
