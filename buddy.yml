@@ -11,6 +11,6 @@
     - "rm -f urpms"
     - "wget -c https://raw.githubusercontent.com/kuboosoft/united-build/master/urpms"
     - "chmod a+x urpms"
-    - "/urpms -g UnitedRPMs/gstreamer1-plugins-bad-freeworld -s gstreamer1-plugins-bad-freeworld.spec -r true -d 'dist .fc28' -c true"
+    - "/urpms -g UnitedRPMs/openh264 -s openh264.spec -r true -d 'dist .fc28' -c true"
 
   
