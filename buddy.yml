@@ -8,9 +8,10 @@
     docker_image_name: "davidva/unibuild-28"
     docker_image_tag: "latest"
     execute_commands:
+    - "MAKEFLAGS='-j 2'"
     - "rm -f urpms"
     - "wget -c https://raw.githubusercontent.com/kuboosoft/united-build/master/urpms"
     - "chmod a+x urpms"
-    - "/urpms -g UnitedRPMs/smplayer -s smplayer.spec -r true -d 'dist .fc28' -c true"
+    - "/urpms -g UnitedRPMs/smplayer -s smplayer.spec -r true -d 'dist .fc28'"
 
   
