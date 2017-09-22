@@ -10,7 +10,7 @@ before_install:
   - sleep 5
   - sudo docker pull davidva/unibuild-26
 script:
-- docker run -v $(pwd):/root/enjoy --cap-add=SYS_ADMIN davidva/unibuild-26 /bin/sh -c "rm -f urpms && wget -c https://raw.githubusercontent.com/kuboosoft/united-build/master/urpms && chmod a+x urpms && /urpms -g UnitedRPMs/mock-unitedrpms -s mock-unitedrpms.spec -r true -d 'dist .fc26' -c true"
+- docker run -v $(pwd):/root/enjoy --cap-add=SYS_ADMIN davidva/unibuild-26 /bin/sh -c "rm -f urpms && wget -c https://raw.githubusercontent.com/kuboosoft/united-build/master/urpms && chmod a+x urpms && /urpms -g UnitedRPMs/chromium-pepper-flash -s chromium-pepper-flash.spec -r true -d 'dist .fc26' -c true"
 notifications:
   webhooks:
     urls:
