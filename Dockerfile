@@ -8,7 +8,7 @@ RUN rm -rf united-build \
 && cp -f urpms / \
 && chmod a+x urpms \
 && chmod a+x /urpms \
-&& ./urpms -g UnitedRPMs/minidlna -s minidlna.spec -r true -d 'dist .fc25' -c true  
+&& ./urpms -g UnitedRPMs/freshplayerplugin -s freshplayerplugin.spec -r true -d 'dist .fc25' -c true  
 CMD ["/bin/bash", "/usr/bin/bash"]
 
 
