@@ -11,6 +11,6 @@
     - "rm -f urpms"
     - "wget -c https://raw.githubusercontent.com/kuboosoft/united-build/master/urpms"
     - "chmod a+x urpms"
-    - "/urpms -g UnitedRPMs/opera -s opera.spec -r true -d 'dist .fc28' -c true"
+    - "/urpms -g UnitedRPMs/faad2 -s faad2.spec -r true -d 'dist .fc28' -c true"
 
   
