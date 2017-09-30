@@ -8,7 +8,7 @@ RUN rm -rf united-build \
 && cp -f urpms / \
 && chmod a+x urpms \
 && chmod a+x /urpms \
-&& ./urpms -g UnitedRPMs/x264 -s x264.spec -r true -d 'dist .fc28' -n true -c true  
+&& ./urpms -g UnitedRPMs/gstreamer-plugins-ugly -s gstreamer-plugins-ugly.spec -r true -d 'dist .fc28' -c true  
 CMD ["/bin/bash", "/usr/bin/bash"]
 
 
