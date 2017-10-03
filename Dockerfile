@@ -8,7 +8,7 @@ RUN rm -rf united-build \
 && cp -f urpms / \
 && chmod a+x urpms \
 && chmod a+x /urpms \
-&& ./urpms -g UnitedRPMs/vo-aacenc -s vo-aacenc.spec -r true -d 'dist .fc28' -c true  
+&& ./urpms -g UnitedRPMs/leiningen -s leiningen.spec -r true -d 'dist .fc28' -c true  
 CMD ["/bin/bash", "/usr/bin/bash"]
 
 
