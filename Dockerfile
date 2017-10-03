@@ -8,7 +8,7 @@ RUN rm -rf united-build \
 && cp -f urpms / \
 && chmod a+x urpms \
 && chmod a+x /urpms \
-&& ./urpms -g UnitedRPMs/shotcut -s shotcut.spec -r true -d 'dist .fc28' -c true  
+&& ./urpms -g UnitedRPMs/vid.stab -s vid.stab.spec -r true -d 'dist .fc28' -c true  
 CMD ["/bin/bash", "/usr/bin/bash"]
 
 
