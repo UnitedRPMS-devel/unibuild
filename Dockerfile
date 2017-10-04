@@ -8,7 +8,7 @@ RUN rm -rf united-build \
 && cp -f urpms / \
 && chmod a+x urpms \
 && chmod a+x /urpms \
-&& ./urpms -g UnitedRPMs/faad2 -s faad2.spec -r true -d 'dist .fc28' -c true -u true  
+&& ./urpms -g UnitedRPMs/faac -s faac.spec -r true -d 'dist .fc28' -u true -c true  
 CMD ["/bin/bash", "/usr/bin/bash"]
 
 
