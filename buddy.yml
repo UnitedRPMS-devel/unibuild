@@ -5,12 +5,12 @@
   actions:
   - action: "Build application"
     type: "BUILD"
-    docker_image_name: "davidva/unibuild-26"
+    docker_image_name: "davidva/unibuild-27"
     docker_image_tag: "latest"
     execute_commands:
     - "rm -f urpms"
     - "wget -c https://raw.githubusercontent.com/kuboosoft/united-build/master/urpms"
     - "chmod a+x urpms"
-    - "/urpms -g UnitedRPMs/x264 -s x264.spec -r true -d 'dist .fc26' -u true"
+    - "/urpms -g UnitedRPMs/atom -s atom.spec -r true -d 'dist .fc27' -c true"
 
   
