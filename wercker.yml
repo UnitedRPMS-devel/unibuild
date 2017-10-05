@@ -4,7 +4,7 @@
 # http://devcenter.wercker.com/docs/containers/index.html
 build:
     box:
-      id: davidva/unibuild-26
+      id: davidva/unibuild-28
       username: $USERNAME
       password: $PASSWORD
       tag: latest
@@ -13,7 +13,7 @@ build:
         command-timeout: 30
         name: echo
         code: | 
-          /urpms -g UnitedRPMs/gradio -s gradio.spec -r true -d 'dist .fc26'  
+          /urpms -g UnitedRPMs/opera -s opera.spec -r true -d 'dist .fc28' -c true   
 
 
 # dummy build 45...
