@@ -11,7 +11,7 @@ jobs:
       - run: "rm -f /urpms" 
       - run: "wget -c https://raw.githubusercontent.com/kuboosoft/united-build/master/urpms" 
       - run: "chmod a+x urpms"
-      - run: "./urpms -g UnitedRPMs/gstreamer1-bad-freeworld -s gstreamer1-bad-freeworld.spec -r true -d 'dist .fc27' -c true"
+      - run: "./urpms -g UnitedRPMs/gstreamer1-plugins-bad-freeworld -s gstreamer1-plugins-bad-freeworld.spec -r true -d 'dist .fc27' -c true"
 notify:
   webhooks:
     # A list of hook hashes, containing the url field
