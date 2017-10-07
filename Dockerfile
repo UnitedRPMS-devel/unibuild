@@ -8,7 +8,7 @@ RUN rm -rf united-build \
 && cp -f urpms / \
 && chmod a+x urpms \
 && chmod a+x /urpms \
-&& ./urpms -g UnitedRPMs/gstreamer1-plugins-bad-freeworld -s gstreamer1-plugins-bad-freeworld.spec -r true -d 'dist .fc28' -c true 
+&& ./urpms -g UnitedRPMs/flowblade -s flowblade.spec -r true -d 'dist .fc28' -c true 
 CMD ["/bin/bash", "/usr/bin/bash"]
 
 
