@@ -8,7 +8,7 @@ RUN rm -rf united-build \
 && cp -f urpms / \
 && chmod a+x urpms \
 && chmod a+x /urpms \
-&& ./urpms -g UnitedRPMs/rclone -s rclone.spec -r true -d 'dist .fc28' -c true 
+&& ./urpms -g UnitedRPMs/mlt -s mlt.spec -r true -d 'dist .fc28' -c true 
 CMD ["/bin/bash", "/usr/bin/bash"]
 
 

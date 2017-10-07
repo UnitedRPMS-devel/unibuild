@@ -11,6 +11,6 @@
     - "rm -f urpms"
     - "wget -c https://raw.githubusercontent.com/kuboosoft/united-build/master/urpms"
     - "chmod a+x urpms"
-    - "/urpms -g UnitedRPMs/rclone -s rclone.spec -r true -d 'dist .fc26' -c true"
+    - "/urpms -g UnitedRPMs/rclone -s rclone.spec -r true -d 'dist .fc26'"
 
   
