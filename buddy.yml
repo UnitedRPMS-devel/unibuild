@@ -5,12 +5,12 @@
   actions:
   - action: "Build application"
     type: "BUILD"
-    docker_image_name: "davidva/unibuild"
+    docker_image_name: "davidva/unibuild-28"
     docker_image_tag: "latest"
     execute_commands:
     - "rm -f urpms"
     - "wget -c https://raw.githubusercontent.com/kuboosoft/united-build/master/urpms"
     - "chmod a+x urpms"
-    - "/urpms -g UnitedRPMs/handbrake -s handbrake.spec -r true -d 'dist .fc25' -c true"
+    - "/urpms -g UnitedRPMs/avidemux -s avidemux.spec -r true -d 'dist .fc28' -c true"
 
   
