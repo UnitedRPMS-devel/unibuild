@@ -8,7 +8,7 @@ RUN rm -rf united-build \
 && cp -f urpms / \
 && chmod a+x urpms \
 && chmod a+x /urpms \
-&& ./urpms -g UnitedRPMs/easy-ebook-viewer -s easy-ebook-viewer.spec -r true -d 'dist .fc28' -c true 
+&& ./urpms -g UnitedRPMs/xmltv -s xmltv.spec -r true -d 'dist .fc28' -c true 
 CMD ["/bin/bash", "/usr/bin/bash"]
 
 
