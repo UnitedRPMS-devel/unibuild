@@ -1,14 +1,11 @@
-FROM davidva/unibuild-27
+FROM davidva/unibuild-26
 
 MAINTAINER David Va <davidva@tutanota.com>
 
-RUN rm -rf united-build \ 
-&& git clone https://github.com/kuboosoft/united-build.git \
-&& cd united-build \
-&& cp -f urpms / \
-&& chmod a+x urpms \
+RUN rm -f urpms \ 
+&& wget -c https://raw.githubusercontent.com/kuboosoft/united-build/master/urpms \
 && chmod a+x /urpms \
-&& ./urpms -g UnitedRPMs/ffmpeg -s ffmpeg.spec -r true -d 'dist .fc27' -c true 
+&& ./urpms -g UnitedRPMs/ffmpeg -s ffmpeg.spec -r true -d 'dist .fc26' -c true -n true
 CMD ["/bin/bash", "/usr/bin/bash"]
 
 
