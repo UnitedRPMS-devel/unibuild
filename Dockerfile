@@ -6,7 +6,7 @@ RUN rm -f urpms \
 && wget -c https://raw.githubusercontent.com/kuboosoft/united-build/master/urpms \
 && chmod a+x /urpms \
 && dnf -y install calc \
-&& ./urpms -g UnitedRPMs/ffmpeg -s ffmpeg.spec -r true -d 'dist .fc25' -c true -n true
+&& ./urpms -g UnitedRPMs/libopenshot -s libopenshot.spec -r true -d 'dist .fc25' -c true -b true -n true
 CMD ["/bin/bash", "/usr/bin/bash"]
 
 
