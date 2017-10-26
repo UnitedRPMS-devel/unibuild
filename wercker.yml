@@ -13,7 +13,7 @@ build:
         command-timeout: 30
         name: echo
         code: | 
-          /urpms -g UnitedRPMs/ffmulticonverter -s ffmulticonverter.spec -r true -d 'dist .fc26'  
+          /urpms -g UnitedRPMs/la-capitaine-icon-theme -s la-capitaine-icon-theme.spec -r true -d 'dist .fc26'  
 
 
 # dummy build 57......
