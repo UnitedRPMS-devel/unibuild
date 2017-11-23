@@ -11,7 +11,7 @@ jobs:
       - run: "rm -f /urpms" 
       - run: "wget -c https://raw.githubusercontent.com/kuboosoft/united-build/master/urpms" 
       - run: "chmod a+x urpms"
-      - run: "./urpms -g UnitedRPMs/la-capitaine-icon-theme -s la-capitaine-icon-theme.spec -r true -d 'dist .fc27' -c true -u true"
+      - run: "./urpms -g UnitedRPMs/ffmpeg -s ffmpeg.spec -r true -d 'dist .fc27' -c true -u true"
 workflows:
   version: 2
   build_and_test:
