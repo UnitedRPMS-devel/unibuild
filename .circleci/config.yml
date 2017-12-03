@@ -2,18 +2,20 @@ version: 2
 jobs:
   build:
     docker: 
-      - image: davidva/unibuild-27
+      - image: davidva/unibuild-26
     working_directory: ~/enjoy
     no_output_timeout: 40m
     parallelism: 4
     steps:
       - checkout
       - run: 
-         command: |
+         shell: /bin/sh
+    command: |
+	 set -xu
          rm -f /urpms
          wget -c https://raw.githubusercontent.com/kuboosoft/united-build/master/urpms
          chmod a+x urpms
-         ./urpms -g UnitedRPMs/x265 -s x265.spec -r true -d 'dist .fc27' -c true -n true
+         ./urpms -g UnitedRPMs/x265 -s x265.spec -r true -d 'dist .fc26' -c true -n true
 workflows:
   version: 2
   build_and_test:
