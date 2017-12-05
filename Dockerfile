@@ -1,4 +1,4 @@
-FROM davidva/unibuild-27
+FROM davidva/unibuild-28
 
 MAINTAINER David Va <davidva@tutanota.com>
 
@@ -6,7 +6,7 @@ RUN rm -f urpms \
 && wget -c https://raw.githubusercontent.com/kuboosoft/united-build/master/urpms \
 && chmod a+x /urpms \
 && dnf -y install calc \
-&& ./urpms -g UnitedRPMs/x265 -s x265.spec -r true -d 'dist .fc27' -c true -n true 
+&& ./urpms -g UnitedRPMs/x265 -s x265.spec -r true -d 'dist .fc28' -c true -n true 
 CMD ["/bin/bash", "/usr/bin/bash"]
 
 
