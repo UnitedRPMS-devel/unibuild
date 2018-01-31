@@ -16,7 +16,7 @@ build:
           /urpms -g UnitedRPMs/opera -s opera.spec -r true -d 'dist .fc27' -u true  
 
 
-# dummy build 71..
+# dummy build 72
 
 
 
