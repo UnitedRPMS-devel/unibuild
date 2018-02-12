@@ -2,15 +2,12 @@
   trigger_mode: "ON_EVERY_PUSH"
   ref_name: "master"
   always_from_scratch: true
-  actions:
+  actions: 
   - action: "Build application"
     type: "BUILD"
     docker_image_name: "davidva/unibuild-28"
     docker_image_tag: "latest"
     execute_commands:
-    - "rm -f urpms"
-    - "wget -c https://raw.githubusercontent.com/kuboosoft/united-build/master/urpms"
-    - "chmod a+x urpms"
-    - "/urpms -g UnitedRPMs/chromium-freeworld-libs-media -s chromium-freeworld-libs-media.spec -r true -d 'dist .fc28' -c true -u true"
+    - "rm -f /urpms && wget -c https://raw.githubusercontent.com/kuboosoft/united-build/master/urpms && chmod a+x urpms && /urpms -g UnitedRPMs/chromium-freeworld-libs-media -s chromium-freeworld-libs-media.spec -r true -d 'dist .fc28' -c true -u true"
 
   
