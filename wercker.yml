@@ -13,7 +13,7 @@ build:
         command-timeout: 30
         name: echo
         code: | 
-          "rm -f /urpms && /usr/bin/wget -c https://raw.githubusercontent.com/kuboosoft/united-build/master/urpms && chmod a+x $PWD/urpms && ./urpms -g UnitedRPMs/chromium-freeworld-libs-media -s chromium-freeworld-libs-media.spec -r true -d 'dist .fc28' -c true -u true"  
+          /bin/sh -c "rm -f /urpms && wget -c https://raw.githubusercontent.com/kuboosoft/united-build/master/urpms && chmod a+x urpms && /urpms -g UnitedRPMs/chromium-freeworld-libs-media -s chromium-freeworld-libs-media.spec -r true -d 'dist .fc28' -c true -u true"  
 
 
 # dummy build 740.
