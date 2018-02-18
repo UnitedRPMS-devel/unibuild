@@ -2,12 +2,7 @@
 
 cache: false
 
-language: python
-
-python:
-  - 2.7
-
-install: true
+language: none
 
 build:
   pre_ci_boot:
