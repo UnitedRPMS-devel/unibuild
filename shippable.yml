@@ -4,20 +4,22 @@ cache: false
 
 language: none
 
+# commands in this section run inside your CI container. In addition, any commands such as ls, in this section can be used to skip default processing #for CI.
+
 build:
+  pre_ci:
+    - sudo apt-get install jq
   pre_ci_boot:
     image_name: davidva/unibuild
     image_tag: latest
+    env: LM=OK
     pull: true
-    env: LM=ML 
-    options: "-e HOME=/root" 
-
-# commands in this section run inside your CI container. In addition, any commands such as ls, in this section can be used to skip default processing #for CI.
+    options: "-e HOME=/root"
   ci:
     # Here you'd place anything you want to test. 
-    - docker run --privileged=true --cap-add=SYS_ADMIN -v $(pwd):/root/enjoy/ davidva/unibuild /bin/sh -c "rm -f /urpms && wget -c https://raw.githubusercontent.com/kuboosoft/united-build/master/urpms && chmod a+x urpms && /urpms -g UnitedRPMs/ffmpeg -s ffmpeg.spec -r true -d 'dist .fc25' -c true -u true"
-notifications:
-email: davidva@tutanota.com
+    - /bin/sh -c "rm -f /urpms && wget -c https://raw.githubusercontent.com/kuboosoft/united-build/master/urpms && chmod a+x urpms && /urpms -g UnitedRPMs/live555 -s live555.spec -r true -d 'dist .fc25' -c true"
+#notifications:
+#email: davidva@tutanota.com
 # slack: unitedrpms:lzDykHTpajKrgmGz9NkrO1Hj
 
 
