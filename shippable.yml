@@ -17,7 +17,7 @@ build:
     options: "-e HOME=/root"
   ci:
     # Here you'd place anything you want to test. 
-    - /bin/sh -c "rm -f /urpms && wget -c https://raw.githubusercontent.com/kuboosoft/united-build/master/urpms && chmod a+x urpms && /urpms -g UnitedRPMs/opera -s opera.spec -r true -d 'dist .fc25' -c true"
+    - /bin/sh -c "rm -f /urpms && wget -c https://raw.githubusercontent.com/kuboosoft/united-build/master/urpms && chmod a+x urpms && /urpms -g UnitedRPMs/mpv -s mpv.spec -r true -d 'dist .fc25' -c true -u true"
 #notifications:
 #email: davidva@tutanota.com
 # slack: unitedrpms:lzDykHTpajKrgmGz9NkrO1Hj
