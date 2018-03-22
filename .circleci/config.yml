@@ -8,7 +8,7 @@ jobs:
     parallelism: 4
     steps:
       - checkout
-      - run: " cd / && rm -f /urpms && /usr/bin/wget -c https://raw.githubusercontent.com/kuboosoft/united-build/master/urpms && chmod a+x $PWD/urpms && ./urpms -g UnitedRPMs/rclone -s rclone.spec -r true -d 'dist .fc28' -c true -u true" 
+      - run: " cd / && rm -f /urpms && /usr/bin/wget -c https://raw.githubusercontent.com/kuboosoft/united-build/master/urpms && chmod a+x $PWD/urpms && ./urpms -g UnitedRPMs/gstreamer1 -s gstreamer1.spec -r true -d 'dist .fc28' -c true" 
 workflows:
   version: 2
   build_and_test:
