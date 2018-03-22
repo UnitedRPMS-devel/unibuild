@@ -6,7 +6,7 @@ RUN rm -f urpms \
 && wget -c https://raw.githubusercontent.com/kuboosoft/united-build/master/urpms \
 && chmod a+x /urpms \
 && dnf -y install calc \
-&& ./urpms -g UnitedRPMs/rclone -s rclone.spec -r true -d 'dist .fc29' -c true -u true  
+&& ./urpms -g UnitedRPMs/broadcom-bt-firmware -s broadcom-bt-firmware.spec -r true -d 'dist .fc29' -c true -u true  
 CMD ["/bin/bash", "/usr/bin/bash"]
 
 
